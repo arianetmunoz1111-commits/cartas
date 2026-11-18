@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Juego de memoria</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>🧠Juego de memoria</h1>
+      <div class="difficulty" role="group" aria-label="Dificultad">
+        <button data-size="4" aria-pressed="true">4 × 4</button>
+        <button data-size="6" aria-pressed="false">6 × 6</button>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div class="stat"><small>Movimientos</small><strong id="moves">0</strong></div>
+      <div class="stat"><small>Parejas</small><strong id="pairs">0/8</strong></div>
+      <div class="stat"><small>Tiempo</small><strong id="time">00:00</strong></div>
+      <div class="stat"><small>Récord</small><strong id="best">—</strong></div>
+      <button class="restart" title="Reiniciar partida">↻</button>
+    </section>
+
+    <section class="board" style="--cols: 4"></section>
+  </main>
+
+  <dialog>
+    <h2>🎉 ¡Enhorabuena!</h2>
+    <p></p>
+    <form method="dialog">
+      <button>Jugar otra vez</button>
+    </form>
+  </dialog>
+<p>Desarrollado por: Arianet - Jhoel </p>
+</body>
+
+</html>
